@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+    <head>
+        <wicket:head>
+            
+            <title>Profile</title>
+            
+        </wicket:head>
+        
+    </head>
+    <body>
+        <wicket:extend>
+                    
+            <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 profile-cadre">
+                
+                <div class="hidden-xs hidden-sm col-md-4 col-lg-4">
+                    <div class="profile-img ">
+                        <img src="" alt="Photo de profile"/>
+                    </div>
+                </div>
+                
+                <div class="hidden-xs hidden-sm col-md-8 col-lg-8 menu-cadre">
+                    
+                    <ul class="col-md-4 col-md-offset-6 col-lg-4 col-lg-offset-6 nav nav-tabs">
+                        <li class="active home"> <a href="#home" data-toggle="tab">Home</a> </li>
+                        <li class="modif"> <a href="#modif" data-toggle="tab">Modifier</a> </li>
+                    </ul>
+                    
+                    <div class="col-md-2 col-lg-2">
+                        <button class="btn btn-primary">Déconnecter</button>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="visible-xs col-xs-12 visible-sm col-sm-12 dynamique-cadre-photo">
+                    
+                    <div class="col-xs-12 col-sm-12"></div>
+                    
+                    <div class="col-xs-12 col-sm-12">
+                        
+                        <div class="col-xs-1 col-xs-offset-11 col-sm-1 col-sm-offset-11 btn-group">
+                            
+                            <button class="btn dropdown-toggle mobile-nav-icon" data-toggle="dropdown"></button>
+                            
+                            <ul class="dropdown-menu dropdown-menu-center">
+                                
+                                <ul class="nav-tabs mobile-nav-tabs">
+                                    
+                                   <li class="home active"> <a href="#home" data-toggle="tab">Home</a> </li>
+                                   <li class="modif"> <a href="#modif" data-toggle="tab">Modifier</a> </li>
+                                   <li> Déconnection </li> 
+                                   
+                                </ul>
+                                
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                
+                <div class="tab-content">
+                    
+                    <div class="tab-pane fade in active" id="home"><h1>Home</h1></div>
+                    <div class="tab-pane fade" id="modif"><h1>Modif</h1></div>
+                    
+                    
+                </div>
+                
+            </div>
+               
+        </wicket:extend>
+    </body>
+</html>
