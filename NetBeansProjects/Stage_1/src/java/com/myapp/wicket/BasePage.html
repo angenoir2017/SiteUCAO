@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"  
+      xml:lang="en"  
+      lang="en"> 
+    <head> 
+        <wicket:head> 
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <wicket:link>
+               <link rel="stylesheet" type="text/css" href="style.css"/>
+               <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+               <link rel="stylesheet" type="text/css" href="projet.css"/>
+               <link rel="icon" href="images/UCAO.bmp"/>
+               <script src="jquery-2.2.0.min.js"></script>
+               <script src="bootstrap.min.js"></script>
+            </wicket:link> 
+        </wicket:head> 
+    </head> 
+    <body> 
+        
+        <div class="base-container">
+            
+            <header class="head"> 
+                <h1> WINDAP </h1>
+            </header>
+
+            <section class="col-xs-12 col-sm-12 content"> 
+                <wicket:child/> 
+            </section>
+             
+        </div>
+        
+        <script>
+            $('.nav-tabs li, .dropdown-menu li').click(function() {
+                    $('.nav-tabs li a').css('color','#337ab7');
+                    $('.dropdown-menu li a').css('color','#555');
+                    if($(this).hasClass('home'))
+                    {
+                            $('.profile-cadre').css('border-bottom-color','#CC0000');
+                            $('.nav-tabs li a[href="#home"], .dropdown-menu li a[href="#home"]').css('color','#CC0000');
+                            
+
+                    }else if($(this).hasClass('modif')){
+
+                            $('.profile-cadre').css('border-bottom-color','#007E33');
+                            $('.nav-tabs li a[href="#modif"], .dropdown-menu li a[href="#modif"]').css('color','#007E33');
+                            
+
+                    }
+            });
+            
+            /*===== Activation du dropdown-menu pour l'affichage mobile =====*/
+            
+            
+            
+        </script>
+    </body> 
+</html>
