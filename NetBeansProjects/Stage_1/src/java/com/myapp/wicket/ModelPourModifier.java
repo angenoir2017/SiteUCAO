@@ -41,13 +41,8 @@ public final class ModelPourModifier extends WebPage {
           
              System.out.println(pass.getValue());
              System.out.println(user.getPass());
-//         if(){
-             /*user.getPseudo().equalsIgnoreCase("admin")&& user.getPass().equals("admin")*/
-             // WicketSession.getInstance().setUserModel(user);
-             //setResponsePage(Acceuil.class);
-//         }else{
-//             System.out.println("Projet invalide");
-//         }
+             
+             
        
        }
         
